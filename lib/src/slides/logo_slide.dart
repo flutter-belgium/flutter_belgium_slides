@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_belgium_slides/src/slides/default_slide.dart';
 import 'package:flutter_belgium_slides/src/slides/slide.dart';
 import 'package:flutter_belgium_slides/src/theme/theme.dart';
-import 'package:flutter_belgium_slides/src/widget/title.dart';
 import 'package:impaktfull_ui_2/impaktfull_ui.dart';
 
 class FlutterBelgiumLogoSlide extends FlutterBelgiumSlide {
@@ -25,20 +24,29 @@ class FlutterBelgiumLogoSlide extends FlutterBelgiumSlide {
             child: ImpaktfullUiAutoLayout.vertical(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
+              spacing: 16,
               children: [
-                const Spacer(),
+                const Spacer(flex: 2),
                 ImpaktfullUiAssetWidget(
                   asset: theme.assets.images.fullLogo,
                   fit: BoxFit.fill,
                 ),
+                const Spacer(),
                 Expanded(
                   child: ImpaktfullUiAutoLayout.vertical(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      FlutterBelgiumSlidesTitle(
-                        title: title,
-                        type: FlutterBelgiumSlidesTitleType.largeTitle,
-                        styleType: FlutterBelgiumSlidesTitleStyleType.onCanvasSecondary,
+                      Container(
+                        color: Colors.black,
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 48,
+                        ),
+                        child: Text(
+                          title,
+                          style: theme.textStyles.onCanvasAccent.body.copyWith(
+                            color: Colors.white,
+                          ),
+                        ),
                       ),
                     ],
                   ),

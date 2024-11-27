@@ -17,7 +17,7 @@ class FlutterBelgiumSlidesApp extends StatelessWidget {
       title: 'Flutter Belgium Slides',
       slides: (context, theme) => [
         const FlutterBelgiumLogoSlide(
-          title: 'Meetup #20',
+          title: 'Meetup #20 | Lemon Companies',
         ),
         const FlutterBelgiumSpeakerSlide(
           title: '⚡️ Lightning talks',
