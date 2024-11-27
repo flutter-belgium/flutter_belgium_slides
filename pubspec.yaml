@@ -18,7 +18,7 @@ dependencies:
   slick_slides: ^0.2.2
   impaktfull_ui_2:
     git:
-      url: git@github.com:impaktfull/flutter_impaktfull_ui.git
+      url: https://github.com/impaktfull/flutter_impaktfull_ui.git
       ref: "5550977"
 
 dev_dependencies:

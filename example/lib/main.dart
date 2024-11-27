@@ -59,6 +59,17 @@ class FlutterBelgiumSlidesApp extends StatelessWidget {
             ),
           ],
         ),
+        const FlutterBelgiumSpeakerSlide(
+          title: '🍿 Open space',
+          speakers: [
+            FlutterBelgiumSpeaker(
+              name: 'Fré Dumazy',
+              profilePictureUrl:
+                  'https://v5.airtableusercontent.com/v3/u/35/35/1732730400000/wgAhE7rItYxw5pUcDiXYBw/UpNlijsGTZxYwwkKeF4aVKIzoVyKbTwoLWklOwXfiUFq75OXmCXHNcwK0xuLHbE7z0kSsfZCZzIc4w670k7ev18vITKH49UU7ihXuEcrU87dYvZo5WssdD_ZrQA-gLlJk2y9oq9B9onOlorufG8t_A/UuKoVvDw9SvkKb6Zg1W9RLr_bulWCb4bXs3CAnXX7ak',
+              talkTitle: 'Flutter Belgium Hackathon',
+            ),
+          ],
+        ),
       ],
     );
   }
