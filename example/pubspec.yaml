@@ -1,0 +1,44 @@
+name: flutter_belgium_slides_example
+description: "A new Flutter project."
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_belgium_slides:
+    path: ../
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  fonts:
+    - family: Ubuntu
+      fonts:
+        - asset: packages/flutter_belgium_slides/fonts/ubuntu/ubuntu_light.ttf
+          weight: 300
+        - asset: packages/flutter_belgium_slides/fonts/ubuntu/ubuntu_regular.ttf
+        - asset: packages/flutter_belgium_slides/fonts/ubuntu/ubuntu_medium.ttf
+          weight: 500
+        - asset: packages/flutter_belgium_slides/fonts/ubuntu/ubuntu_medium.ttf
+          weight: 600
+        - asset: packages/flutter_belgium_slides/fonts/ubuntu/ubuntu_bold.ttf
+          weight: 700
+    - family: Geologica
+      fonts:
+        - asset: packages/flutter_belgium_slides/fonts/geologica/geologica_light.ttf
+          weight: 300
+        - asset: packages/flutter_belgium_slides/fonts/geologica/geologica_regular.ttf
+        - asset: packages/flutter_belgium_slides/fonts/geologica/geologica_medium.ttf
+          weight: 500
+        - asset: packages/flutter_belgium_slides/fonts/geologica/geologica_semibold.ttf
+          weight: 600
+        - asset: packages/flutter_belgium_slides/fonts/geologica/geologica_bold.ttf
+          weight: 700

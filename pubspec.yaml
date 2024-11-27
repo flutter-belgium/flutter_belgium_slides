@@ -1,0 +1,35 @@
+name: flutter_belgium_slides
+description: "The base for all Flutter Belgium presentations."
+publish_to: none
+version: 0.0.1
+repository: https://github.com/flutter-belgium/flutter_belgium_slides
+topics:
+  - presentation
+  - slides
+  - flutter-belgium
+
+environment:
+  sdk: ^3.5.1
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  slick_slides: ^0.2.2
+  impaktfull_ui_2:
+    git:
+      url: git@github.com:impaktfull/flutter_impaktfull_ui.git
+      ref: "5550977"
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/images/team/
+    - assets/images/socials/
+    - assets/images/speakers/
