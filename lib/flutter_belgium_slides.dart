@@ -9,9 +9,10 @@ export 'src/theme/theme.dart';
 export 'src/model/speaker.dart';
 
 // Slides
-export 'src/slides/slide.dart';
+export 'src/slides/circle_image_slide.dart';
 export 'src/slides/default_slide.dart';
 export 'src/slides/logo_slide.dart';
+export 'src/slides/slide.dart';
 export 'src/slides/speaker_slide.dart';
 
 // Widgets

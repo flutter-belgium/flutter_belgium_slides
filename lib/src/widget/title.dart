@@ -42,7 +42,7 @@ class FlutterBelgiumSlidesTitle extends StatelessWidget {
       ),
       child: Text(
         title,
-        style: _getTextStyle(context).copyWith(color: Colors.black),
+        style: _getTextStyle(context),
         textAlign: textAlign,
       ),
     );

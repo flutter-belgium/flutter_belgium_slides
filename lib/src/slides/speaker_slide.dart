@@ -33,7 +33,7 @@ class FlutterBelgiumSpeakerSlide extends FlutterBelgiumSlide {
           FlutterBelgiumSlidesTitle(
             title: title,
             type: FlutterBelgiumSlidesTitleType.largeTitle,
-            styleType: FlutterBelgiumSlidesTitleStyleType.onCanvasSecondary,
+            styleType: FlutterBelgiumSlidesTitleStyleType.onCanvas,
             dense: true,
           ),
           for (final speaker in speakers) ...[

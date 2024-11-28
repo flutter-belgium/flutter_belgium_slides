@@ -19,6 +19,12 @@ class FlutterBelgiumSlidesApp extends StatelessWidget {
         const FlutterBelgiumLogoSlide(
           title: 'Meetup #20 | Lemon Companies',
         ),
+        FlutterBelgiumCircleImageSlide(
+          imageAsset: theme.assets.images.belgianFlag,
+          subtitle:
+              'Flutter Belgium aims to create a welcoming community where everyone interested in the Flutter framework can come to share, learn and/or get inspired.',
+          extraText: 'We’ve been doing so since 2018.',
+        ),
         const FlutterBelgiumSpeakerSlide(
           title: '⚡️ Lightning talks',
           speakers: [
@@ -60,7 +66,7 @@ class FlutterBelgiumSlidesApp extends StatelessWidget {
           ],
         ),
         const FlutterBelgiumSpeakerSlide(
-          title: '🍿 Open space',
+          title: '🚀 Open Space',
           speakers: [
             FlutterBelgiumSpeaker(
               name: 'Fré Dumazy',
@@ -69,6 +75,15 @@ class FlutterBelgiumSlidesApp extends StatelessWidget {
               talkTitle: 'Flutter Belgium Hackathon',
             ),
           ],
+        ),
+        FlutterBelgiumCircleImageSlide(
+          title: ' 🍕 Tonight’s host',
+          imageAsset: theme.assets.images.belgianFlag,
+        ),
+        FlutterBelgiumCircleImageSlide(
+          title: 'Next meetup: InvestSuite\n(Special Flutter Livestream event with merch!)',
+          imageAsset: theme.assets.images.belgianFlag,
+          subtitle: '17/12/202\n\nLocation: InvestSuite Sluisstraat 79, 3000 Leuven',
         ),
       ],
     );

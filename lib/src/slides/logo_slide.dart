@@ -43,9 +43,7 @@ class FlutterBelgiumLogoSlide extends FlutterBelgiumSlide {
                         ),
                         child: Text(
                           title,
-                          style: theme.textStyles.onCanvasAccent.body.copyWith(
-                            color: Colors.white,
-                          ),
+                          style: theme.textStyles.onCard.body,
                         ),
                       ),
                     ],

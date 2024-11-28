@@ -63,10 +63,11 @@ class FlutterBelgiumDimensTheme {
 }
 
 class FlutterBelgiumSlidesImageAssetsTheme {
+  final ImpaktfullUiAsset background;
+  final ImpaktfullUiAsset belgianFlag;
+  final ImpaktfullUiAsset bullet;
   final ImpaktfullUiAsset smallLogo;
   final ImpaktfullUiAsset fullLogo;
-  final ImpaktfullUiAsset background;
-  final ImpaktfullUiAsset bullet;
   final ImpaktfullUiAsset qrCodeWebsite;
   final ImpaktfullUiAsset qrCodeScan;
   final ImpaktfullUiAsset joinUs;
@@ -78,10 +79,11 @@ class FlutterBelgiumSlidesImageAssetsTheme {
   final FlutterBelgiumSlidesTeamImageAssetsTheme team;
 
   const FlutterBelgiumSlidesImageAssetsTheme({
+    required this.background,
+    required this.belgianFlag,
     required this.bullet,
     required this.smallLogo,
     required this.fullLogo,
-    required this.background,
     required this.team,
     required this.qrCodeWebsite,
     required this.qrCodeScan,

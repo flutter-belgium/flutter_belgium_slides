@@ -27,16 +27,11 @@ class FlutterBelgiumSpeakerCard extends StatelessWidget {
             children: [
               Text(
                 speaker.talkTitle,
-                style: theme.textStyles.onCanvasSecondary.smallTitle.copyWith(
-                  color: Colors.black,
-                  fontSize: 48,
-                ),
+                style: theme.textStyles.onCanvas.smallTitle,
               ),
               Text(
                 speaker.name,
-                style: theme.textStyles.onCanvasSecondary.body.copyWith(
-                  fontSize: 32,
-                ),
+                style: theme.textStyles.onCanvasSecondary.body,
               ),
             ],
           ),

@@ -9,6 +9,16 @@ class FlutterBelgiumSlidesThemeDefaults {
 
     const assets = FlutterBelgiumSlidesAssetsTheme(
       images: FlutterBelgiumSlidesImageAssetsTheme(
+        background: ImpaktfullUiAsset.svg(
+          'background.svg',
+          directory: 'assets/images',
+          package: package,
+        ),
+        belgianFlag: ImpaktfullUiAsset.pixel(
+          'belgian_flag.png',
+          directory: 'assets/images',
+          package: package,
+        ),
         bullet: ImpaktfullUiAsset.svg(
           'bullet.svg',
           directory: 'assets/images',
@@ -21,11 +31,6 @@ class FlutterBelgiumSlidesThemeDefaults {
         ),
         smallLogo: ImpaktfullUiAsset.svg(
           'small_logo.svg',
-          directory: 'assets/images',
-          package: package,
-        ),
-        background: ImpaktfullUiAsset.svg(
-          'background.svg',
           directory: 'assets/images',
           package: package,
         ),
@@ -90,14 +95,14 @@ class FlutterBelgiumSlidesThemeDefaults {
     );
     const colors = FlutterBelgiumColorsTheme(
       accent: Color(0xFF7d64f2),
-      canvas: Color(0xFF000000),
-      canvasInverted: Color(0xFF000000),
+      canvas: Color(0xFFE5E5E5),
+      canvasInverted: Color(0xFFE5E5E5),
       card: Color(0xFF1A1A1A),
-      cardInverted: Color(0xFFE5E5E5),
-      text: Color(0xFFFFFFFF),
+      cardInverted: Color(0xFF1A1A1A),
+      text: Color(0xFF1A1A1A),
       textSecondary: Color(0xFFA6A6A6),
-      textInverted: Color(0xFF000000),
-      textAccent: Color(0xFF000000),
+      textInverted: Color(0xFFFFFFFF),
+      textAccent: Color(0xFFFFFFFF),
     );
     final dimens = FlutterBelgiumDimensTheme(
       borderRadius: BorderRadius.circular(16),
@@ -105,7 +110,7 @@ class FlutterBelgiumSlidesThemeDefaults {
     final textStyles = FlutterBelgiumTextStylesTheme(
       onCanvas: FlutterBelgiumSlidesTextStyleTheme.create(colors.text, fontFamily),
       onCanvasSecondary: FlutterBelgiumSlidesTextStyleTheme.create(colors.textSecondary, fontFamily),
-      onCard: FlutterBelgiumSlidesTextStyleTheme.create(colors.text, fontFamily),
+      onCard: FlutterBelgiumSlidesTextStyleTheme.create(colors.textInverted, fontFamily),
       onCardSecondary: FlutterBelgiumSlidesTextStyleTheme.create(colors.textSecondary, fontFamily),
       onCanvasAccent: FlutterBelgiumSlidesTextStyleTheme.create(colors.textAccent, fontFamily),
       onCardAccent: FlutterBelgiumSlidesTextStyleTheme.create(colors.textAccent, fontFamily),
